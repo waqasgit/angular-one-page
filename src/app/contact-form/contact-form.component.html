@@ -1,0 +1,148 @@
+<div id="contactFormCountContainer">
+  <div class="container">
+
+    <div class="row text-left">
+      <div class="col-lg-6 col-md-12">
+        <h4>Customs Support - Take the load off your mind</h4>
+        <div id="smallBorder"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-md-12 requestQuoteContainer">
+        <p class="font-bold font-14 marginBottom-0">Get in touch with one of our customs experts! </p>
+        <p class="font-regular font-14">Fill in the contact form or use the chat function on the website.</p>
+
+        <form [formGroup]="requestQuoteForm" id="requestQuoteForm" novalidate (ngSubmit)="submitRequestQuoteForm()" autocomplete="off">
+          <div class="row">
+            <div class="col-12">
+              <p class="font-bold font-14">Are you a new or returning customer? *</p>
+              <div class="form-check form-check-inline">
+                <input
+                  mdbRadio
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label font-14 font-regular" for="inlineRadio1">New</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  mdbRadio
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label font-14 font-regular" for="inlineRadio2">Returning</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row choiceOfCustomerDd">
+            <div class="col-12">
+              <select class="form-select" aria-label="Choice of service" formControlName="choiceOfService">
+                <option selected value="0">Choice of service *</option>
+                <option value="1">Customs</option>
+                <option value="2">Clearance</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row margin-0">
+            <div class="col-12 from-border"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 form-field">
+              <input type="text" class="form-control" id="firstname" formControlName="firstName" placeholder="First name *">
+            </div>
+            <div class="col-lg-6 col-md-12 form-field">
+              <input type="text" class="form-control" id="lastname" formControlName="lastName" placeholder="Last name *">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 form-field">
+              <input type="text" class="form-control" id="company" formControlName="company" placeholder="Company">
+            </div>
+            <div class="col-lg-6 col-md-12 form-field">
+              <input type="email" class="form-control" id="email" formControlName="email" placeholder="E-mail *">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 form-field">
+              <input type="text" class="form-control" id="phone" formControlName="phone" placeholder="Phone number">
+            </div>
+            <div class="col-lg-6 col-md-12 form-field">
+              <select class="form-select" aria-label="Country">
+                <option selected disabled>Country *</option>
+                <option  *ngFor="let country of countriesList" [value]="country.id">{{country.name}}</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 form-field">
+              <input class="form-check-input" type="checkbox" value="" id="terms" />
+              <label class="form-check-label" for="terms">I agree with the Terms and Conditions *</label>
+            </div>
+            <div class="col-lg-6 col-md-12 form-field">
+              <input class="form-check-input" type="checkbox" value="" id="newsletter" />
+              <label class="form-check-label" for="newsletter">I want to sign up for the newsletter <i class="fa-regular fa-envelope"></i></label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 form-field">
+              <button type="submit" class="btn btn-primary">Request a quote</button>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+      <div class="col-lg-4 col-md-12" id="personalContactContainer">
+        <p class="font-bold font-14 marginBottom-0">You prefer a personal contact? </p>
+        <p class="font-regular font-14">Please find the phone numbers of our locations below.</p>
+
+        <form [formGroup]="personalQuoteForm" id="personalQuoteForm" novalidate (ngSubmit)="submitPersonalQuoteForm()" autocomplete="off">
+          <div class="row">
+            <div class="col-12">
+              <select class="form-select" aria-label="quote">
+                <option  *ngFor="let quote of personalQuoteTypesList" [value]="quote.id">{{quote.name}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 form-field">
+              <button type="submit" class="btn btn-primary">Go</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="row">
+          <div class="col-12 font-regular slogan">
+            „Let’s grow together!“
+          </div>
+          <div class="col-12">
+            <img class="float-start" src="../../assets/images/person-image.png"/>
+            <div class="float-start marginLeft-15">
+              <p class="font-bold marginBottom-0">Michael Doe</p>
+              <p class="font-regular marginBottom-0">Customer Support Lead</p>
+              <p class="font-regular marginBottom-0">CSG</p>
+            </div>      
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>

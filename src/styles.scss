@@ -1,1 +1,161 @@
 /* You can add global styles to this file, and also import other style files */
+// MDB SCSS
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+
+@font-face {
+    font-family: "IbmPlexSansBold";
+    src: url("./assets/fonts/IBMPlexSans-Bold.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "IbmPlexSansRegular";
+    src: url("./assets/fonts/IBMPlexSans-Regular.ttf") format("truetype"),
+}
+
+body{
+    font-family: "IbmPlexSansBold";
+    background-color: #fff;
+}
+
+header{
+    padding: 10px 25px;
+}
+
+#app-logo{
+    padding-right: 30px;
+    border-right: 1px solid #ccc;
+}
+
+#headerNavUl{
+    margin-left: 30px;
+}
+
+#app-logo img{
+    width: 115px;
+}
+
+.navbar{
+    box-shadow: none;
+}
+
+.nav-item:last-child{
+    border-bottom: none;
+}
+
+.btn-primary{
+    background-color: #01a4b7;
+    text-transform: none;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: #076b70;
+}
+
+h1, h2, h3, h4, h5, .font-bold{
+    font-family: "IbmPlexSansBold";
+}
+
+p, span, .font-regular{
+    font-family: "IbmPlexSansRegular";
+}
+
+input, select, label{
+    font-family: "IbmPlexSansRegular";
+    font-size: 13px;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.font-14{
+    font-size: 14px;
+}
+
+.font-13{
+    font-size: 13px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-button-next, .swiper-button-prev{
+      color: #ccc;
+  }
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .swiper-pagination-bullet-active{
+    background: #01a4b7;
+  }
+
+  .swiper-wrapper{
+    width: 70%;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom:-5px;
+  }
+
+  .form-check-input[type=radio]:checked:after{
+    border-color: #01a4b7;
+    background-color: #01a4b7;
+  }
+
+  .form-check-input:checked{
+    border-color: #01a4b7 !important;
+  }
+
+  .form-check-input[type=checkbox]:checked {
+    background-color: #01a4b7 !important;
+    }
+
+@media (max-width: 992px) {   
+    .nav-item{
+        border-bottom: 1px solid #CCCCCC;
+        text-align: center;
+    }
+}
+

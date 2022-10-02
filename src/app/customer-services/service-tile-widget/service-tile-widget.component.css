@@ -1,0 +1,11 @@
+i{
+    color: #01a4b7;
+}
+
+@media (max-width: 991px) {
+    .tileContainer{
+        width: 80%;
+        margin-left: 10%;
+        height: 220px;
+    }
+}

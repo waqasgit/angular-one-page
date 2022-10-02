@@ -1,0 +1,21 @@
+<div id="customsSupportContentContainer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4>Customs Support is a full-service provider for customs services and is here to help</h4>
+        <div id="smallBorder"></div>
+      </div>
+    </div>
+    <div class="row">
+      <swiper [keyboard]="{enabled: true}" [pagination]="{clickable: true}" [breakpoints]="breakpoints"
+      [navigation]="true"
+      class="mySwiper">
+  
+      <ng-template swiperSlide *ngFor="let customsSupport of customsSupportTilesArray">
+        <customs-support-widget [data]="customsSupport"></customs-support-widget>    
+      </ng-template>
+      </swiper>
+    </div>
+  </div>
+  
+</div>

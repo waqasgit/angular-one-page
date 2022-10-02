@@ -1,0 +1,51 @@
+
+
+#customs-clearance-section{
+    background-image: url('../../assets/images/customs-clearance-lady.png');
+    height: 600px;
+}
+
+h2, p{
+    color: #fff;
+}
+
+i{
+    color:#076b70;
+}
+
+#customs-clearance-section .container{
+    margin-top: 115px;
+}
+
+#smallBorder{
+    width: 50px;
+    border-top: 3px solid #01a4b7;
+    margin: 25px 0px;
+}
+
+.containerLeft{
+    width: 50%;
+    height: inherit;
+    position: relative;
+    background-color: #01a4b7;
+    z-index: 999;
+    opacity: 0.1;
+}
+
+#background-overlay{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.container{
+    z-index: 999;
+    position: relative;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #customs-clearance-section {
+        height: 600px;
+    }
+}

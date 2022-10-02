@@ -1,0 +1,50 @@
+#customeAgentCountContainer{
+    margin-top: 70px;
+    background-color: #006b6e;
+}
+
+.container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#smallBorder{
+    width: 50px;
+    border-top: 3px solid #01a4b7;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4, h1, span{
+    color: #fff;
+}
+
+.tile{
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.tile:last-child{
+    border-right: 0px;
+}
+
+.buttonContainer{
+    margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .tile{
+        border-right: 0px;
+        border-bottom: 1px solid #ccc;
+        width: 90%;
+        margin-left: 5%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    
+    .tile:last-child{
+        border-bottom: 0px;
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,12 @@
+#customsSupportContentContainer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#smallBorder{
+    width: 50px;
+    border-top: 3px solid #01a4b7;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

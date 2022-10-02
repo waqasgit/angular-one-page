@@ -1,0 +1,22 @@
+.widgetContainer{
+    max-width: 100%;
+}
+
+.widgetContainer h6{
+    margin-top: 15px;
+}
+
+.widget-description{
+    text-align: justify;
+}
+
+.learnMore{
+    margin-top: 15px;
+    color: #01a4b7;
+    text-align: left;
+}
+
+.learnMore i{
+    font-size: 12px;
+    margin-left: 10px;
+}

@@ -1,0 +1,43 @@
+#aviation-details-container img{
+    max-width: 100%;
+}
+
+#smallBorder{
+    width: 50px;
+    border-top: 3px solid #01a4b7;
+    margin: 25px 0px;
+}
+
+.padding-0{
+    padding:0px;
+}
+
+.margin-0{
+    margin: 0px;
+}
+
+.topRightText{
+    padding: 7% 15% 0 10%;
+}
+
+.bottomLeftText{
+    padding: 7% 8% 0 15%;
+}
+
+@media (max-width: 991px) {
+    .topRightText{
+        padding: 10% 3%;
+    }
+    
+    .bottomLeftText{
+        padding: 10% 3%;
+    }
+
+    .bottomContainerLeft{
+        float: right;
+    }
+
+    .bottomContainerRight{
+        float: left;
+    }
+}

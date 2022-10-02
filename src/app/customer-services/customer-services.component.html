@@ -1,0 +1,41 @@
+<div id="customerServicesContainer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 col-md-12">
+        <h4>
+          We offer end-to-end customs services with fast, accurate and compliant customs in multiple countries
+        </h4>
+        <div id="smallBorder"></div>
+      </div>
+      <div class="col-lg-3 d-md-none d-sm-none d-none d-lg-block text-right">
+        <button type="button" class="btn btn-primary">Get In Touch</button>
+      </div>
+    </div>
+    <div class="row">
+      <ng-container *ngFor="let service of serviceTilesArray">
+        <div class="d-md-none d-sm-none d-none d-lg-block col-sm-4">
+          <service-tile-widget [data]="service"></service-tile-widget>    
+        </div>
+      </ng-container>
+      
+    </div>
+
+    <div class="row d-lg-none d-md-block">
+      <swiper [slidesPerView]="1" [spaceBetween]="30" [keyboard]="{enabled: true}" [pagination]="{clickable: true}"
+      [navigation]="true"
+      class="mySwiper">
+
+      <ng-template swiperSlide *ngFor="let service of serviceTilesArray">
+        <service-tile-widget [data]="service"></service-tile-widget>    
+      </ng-template>
+      </swiper>
+    </div>
+
+    <div class="row marginTop-15">
+      <div class="col-sm-12 d-lg-none text-center">
+        <button type="button" class="btn btn-primary">Get In Touch</button>
+      </div>
+    </div>
+
+  </div>
+</div>

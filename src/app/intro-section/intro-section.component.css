@@ -1,0 +1,41 @@
+
+
+#intro-section{
+    background-image: url('../../assets/images/Gruppe_maskieren_1.png');
+    height: 800px;
+}
+
+h2, p{
+    color: #fff;
+}
+
+i{
+    color:#076b70;
+}
+
+#intro-section .container{
+    margin-top: 115px;
+}
+
+#smallBorder{
+    width: 50px;
+    border-top: 3px solid #01a4b7;
+    margin: 25px 0px;
+}
+
+.right-section{
+    margin-top: 60px;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+    #intro-section {
+        height: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    .right-section{
+        margin-top: 0px;
+    }
+}
